@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Totus Tuus — oração, Terço, Rosário, santos do dia e preparação para a Consagração a Jesus por Maria." />
+  <title>Totus Tuus</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav container">
+      <a class="brand" href="#inicio"><span class="cross">✠</span> TOTUS TUUS</a>
+      <button class="menu-btn" aria-label="Abrir menu">☰</button>
+      <div class="nav-links">
+        <a href="#terco">Terço</a>
+        <a href="#rosario">Rosário</a>
+        <a href="#santos">Santos</a>
+        <a href="#consagracao">Consagração</a>
+        <a href="#oracoes">Orações</a>
+      </div>
+    </nav>
+
+    <div class="hero-content container">
+      <p class="eyebrow">AD IESUM PER MARIAM</p>
+      <h1>Totus Tuus</h1>
+      <p class="subtitle">“Sou todo teu, ó Maria, e tudo o que é meu te pertence.”</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#terco">Aprender a rezar</a>
+        <a class="btn ghost" href="#consagracao">Preparar minha consagração</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro container section">
+      <div>
+        <span class="section-tag">UM LUGAR PARA REZAR</span>
+        <h2>Uma caminhada simples, mariana e cristocêntrica.</h2>
+      </div>
+      <p>Este espaço foi pensado para ajudar quem está começando e também quem deseja aprofundar a vida de oração: passo a passo do Terço, Rosário, mistérios, santos do dia e preparação para a Consagração Total a Jesus por Maria.</p>
+    </section>
+
+    <section class="section alt" id="terco">
+      <div class="container">
+        <span class="section-tag">SANTO TERÇO</span>
+        <h2>Como rezar o Terço</h2>
+        <p class="lead">O Terço é composto por cinco dezenas. Em cada mistério, meditamos um acontecimento da vida de Jesus e de Maria.</p>
+
+        <div class="steps-grid">
+          <article class="step"><b>01</b><h3>Sinal da Cruz</h3><p>Em nome do Pai, do Filho e do Espírito Santo. Amém.</p></article>
+          <article class="step"><b>02</b><h3>Creio</h3><p>Reze o Símbolo dos Apóstolos.</p></article>
+          <article class="step"><b>03</b><h3>Orações iniciais</h3><p>1 Pai-Nosso, 3 Ave-Marias e 1 Glória ao Pai.</p></article>
+          <article class="step"><b>04</b><h3>Anuncie o mistério</h3><p>Medite brevemente o mistério correspondente ao dia.</p></article>
+          <article class="step"><b>05</b><h3>Reze a dezena</h3><p>1 Pai-Nosso, 10 Ave-Marias e 1 Glória. Pode-se acrescentar a oração de Fátima.</p></article>
+          <article class="step"><b>06</b><h3>Repita 5 vezes</h3><p>Faça o mesmo para cada um dos cinco mistérios.</p></article>
+          <article class="step"><b>07</b><h3>Encerramento</h3><p>Reze a Salve-Rainha e finalize com o Sinal da Cruz.</p></article>
+        </div>
+
+        <div class="mysteries-box">
+          <div class="mystery-tabs" role="tablist">
+            <button class="tab active" data-set="gozosos">Gozosos</button>
+            <button class="tab" data-set="luminosos">Luminosos</button>
+            <button class="tab" data-set="dolorosos">Dolorosos</button>
+            <button class="tab" data-set="gloriosos">Gloriosos</button>
+          </div>
+          <div id="mystery-content" class="mystery-content"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="rosario">
+      <span class="section-tag">SANTO ROSÁRIO</span>
+      <h2>Terço e Rosário: qual a diferença?</h2>
+      <div class="split">
+        <div class="feature-card">
+          <h3>O Terço</h3>
+          <p>É a oração de cinco dezenas, contemplando um conjunto de cinco mistérios.</p>
+        </div>
+        <div class="feature-card">
+          <h3>O Rosário</h3>
+          <p>Tradicionalmente, é a contemplação de todos os mistérios. Com a inclusão dos Mistérios Luminosos, pode-se percorrer os quatro conjuntos: Gozosos, Luminosos, Dolorosos e Gloriosos.</p>
+        </div>
+      </div>
+      <div class="rosary-order">
+        <h3>Como rezar o Rosário completo</h3>
+        <ol>
+          <li>Faça as orações iniciais do Terço.</li>
+          <li>Reze as cinco dezenas dos Mistérios Gozosos.</li>
+          <li>Continue com os cinco Mistérios Luminosos.</li>
+          <li>Depois, os cinco Mistérios Dolorosos.</li>
+          <li>Por fim, os cinco Mistérios Gloriosos.</li>
+          <li>Encerre com a Salve-Rainha e uma oração final.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section saints-section" id="santos">
+      <div class="container">
+        <span class="section-tag">CALENDÁRIO DOS SANTOS</span>
+        <h2>Santo do dia</h2>
+        <p class="lead">Escolha uma data. O calendário indica celebrações cadastradas e oferece acesso à página do Vaticano para consultar os santos lembrados naquele dia.</p>
+
+        <div class="saints-layout">
+          <div class="calendar-card">
+            <div class="calendar-head">
+              <button id="prevMonth" aria-label="Mês anterior">←</button>
+              <h3 id="monthTitle"></h3>
+              <button id="nextMonth" aria-label="Próximo mês">→</button>
+            </div>
+            <div class="weekdays"><span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span></div>
+            <div id="calendarGrid" class="calendar-grid"></div>
+          </div>
+
+          <aside class="saint-card" id="saintCard">
+            <p class="saint-date" id="saintDate"></p>
+            <h3 id="saintName">Selecione uma data</h3>
+            <p id="saintStory">Clique em um dia do calendário para ver a celebração cadastrada ou consultar o calendário de santos do Vatican News.</p>
+            <a id="vaticanLink" class="btn small" href="https://www.vaticannews.va/pt/santo-do-dia.html" target="_blank" rel="noreferrer">Consultar no Vatican News</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="consagracao">
+      <div class="container">
+        <span class="section-tag">CONSAGRAÇÃO TOTAL</span>
+        <h2>33 dias de preparação para a Consagração a Jesus por Maria</h2>
+        <p class="lead">Inspirada no método espiritual de São Luís Maria Grignion de Montfort. A preparação é uma caminhada de oração, conversão e aprofundamento da união com Cristo por meio de Maria.</p>
+
+        <div class="phases">
+          <article><span>12 dias</span><h3>Desapego do espírito do mundo</h3><p>Revisar hábitos, intenções e apegos que afastam de Deus, buscando maior liberdade interior.</p></article>
+          <article><span>7 dias</span><h3>Conhecimento de si</h3><p>Pedir luz para reconhecer virtudes, fragilidades, pecados, motivações e a necessidade da graça.</p></article>
+          <article><span>7 dias</span><h3>Conhecimento de Maria</h3><p>Contemplar a fé, humildade, obediência e caridade de Nossa Senhora, aprendendo a caminhar com ela.</p></article>
+          <article><span>7 dias</span><h3>Conhecimento de Jesus Cristo</h3><p>Aprofundar a relação com Cristo e compreender que toda verdadeira devoção mariana conduz a Ele.</p></article>
+        </div>
+
+        <div class="consecration-tool">
+          <div>
+            <h3>Meu caminho de 33 dias</h3>
+            <p>Marque cada dia concluído. O progresso fica salvo neste navegador.</p>
+          </div>
+          <button id="resetProgress" class="text-btn">Recomeçar</button>
+          <div id="daysGrid" class="days-grid"></div>
+          <div class="progress-line"><div id="progressBar"></div></div>
+          <p id="progressText" class="progress-text"></p>
+        </div>
+
+        <div class="consecration-final">
+          <h3>No 34º dia</h3>
+          <p>Tradicionalmente, escolhe-se uma festa mariana para a Consagração. Recomenda-se participar da Santa Missa e, quando possível, preparar-se com Confissão e Comunhão. A fórmula de consagração deve ser rezada de modo consciente e livre.</p>
+          <p class="note">Este guia é devocional e não substitui a orientação de um sacerdote ou diretor espiritual.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="oracoes">
+      <span class="section-tag">ORAÇÕES</span>
+      <h2>Orações para acompanhar o Terço</h2>
+      <div class="prayer-accordion" id="prayers"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><strong>✠ TOTUS TUUS</strong><p>Ad Iesum per Mariam — A Jesus por Maria.</p></div>
+      <div><p>Fontes de referência: Vatican News, EWTN e tradição espiritual montfortina.</p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
